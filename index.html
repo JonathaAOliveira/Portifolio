@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Jonatha Araujo Oliveira</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Skill</a></li>
+          <li><a href="#projects">Meus projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Jonatha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Meus projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, sou</p>
+        <h1 class="title">Jonatha</h1>
+        <p class="section__text__p2">Analista de sistemas</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='https://drive.google.com/drive/folders/16QvIVUCf4kwtqiEBJTvJAnJgkQmXYDZK?usp=sharing'"
+          >
+          <!--onclick="window.open('./assets/resume-example.pdf')" dentro do button-->
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./index.html#contact'">
+            Contato
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jonatha-araujo-oliveira-145984317/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/JonathaAOliveira'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>
+                <font size="1">
+                  +4 anos - Implantador de sistemas
+                  <br/> 2 anos - Consultor de implantação remota
+                  <br/> 2 anos - Consultor de implantação/Ger.
+                  <br/>+2 anos - Analista de suporte a ERPs e Integrações
+                </font>
+              </p>
+
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formação</h3>
+              <p>
+                  <font size="1">
+                    Bacharel em Ciências da Computação
+                    <br />MBA em Gestão de Projetos
+                    <br />MBA em Gestão de Tecnologia da informação
+                  </font>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <font size="0.8">
+                Em minha jornada, comecei na tecnologia como especialista em redes de internet via rádio. Rapidamente, evoluí para apoio técnico em informática e, posteriormente, me tornei especialista em implantação de sistemas. Com vasta experiência em treinamentos e configurações complexas, já trabalhei com clientes dos mais variados setores, como varejo, atacado, indústrias e muito mais.
+Minha carreira inclui também consultoria de implantação, onde liderei projetos e treinamentos de forma remota, além de contribuir ativamente em aspectos técnicos, como configuração de bases de dados e gestão estratégica de demandas. Atualmente, estou focado como analista de integrações B2B, garantindo que as operações fluam perfeitamente entre diferentes sistemas e parceiros.
+Para saber mais sobre minha trajetória e conquistas, confira o download do meu CV !
+              </font>
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">.</p>
+      <h1 class="title">Skill´s</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skill</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Comunicação</h5>
+                  <p>
+                    <font size="1">
+                      Clara e concisa, tanto verbalmente quanto escrito, com técnicos e não-técnicos.
+                    </font>
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Resolução de Problemas</h5>
+                  <p>
+                    <font size="1">
+                      Capacidade de analisar problemas complexos, identificar a raiz e propor soluções eficazes.
+                    </font>
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Proatividade</h5>
+                  <p>
+                    <font size="1">
+                      Iniciativa para identificar oportunidades de melhoria e implementar soluções.
+                    </font>
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Adaptabilidade</h5>
+                  <p>
+                    <font size="1">
+                      Flexibilidade para lidar com mudanças e aprender novas tecnologias rapidamente.
+                    </font>
+                  </p>
+                </div>
+              </article>
+   
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Hard Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Metodologias </h5>
+                  <p>
+                    <font size="1">
+                      Agile, Scrum, Waterfall.
+                    </font>
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Ger. de projetos</h5>
+                  <p>
+                    <font size="1">
+                      Planejamento, execução, monitoramento e controle de projetos.
+                    </font>
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Ferramentas</h5>
+                  <p>
+                    <font size="1">
+                      Operacional: MS PowerBI, MS Project, Trello, Jira, Salesforce.
+                    </font>
+                    <font size="1">
+                      Tecnicas: Postman, Jenks, SoapUI, VSC, DBeaver, Kibana.
+                    </font>
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h5>Regras de négocio</h5>
+                  <p>
+                    <font size="1">
+                      Fiscal, Financeiro, Compras, Entradas, O.S, PDV, Precificação, Importação e integrações B2B & B2C.
+                    </font>
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">.</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto E-book</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://a.co/d/0ocp7Ml'"
+              >
+                Amazon
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.amazon.com.br/dp/B0BN7P8X6C?ref=cm_sw_r_cp_ud_dp_37GSRAST2NE3MDFSPJ21&ref_=cm_sw_r_cp_ud_dp_37GSRAST2NE3MDFSPJ21&social_share=cm_sw_r_cp_ud_dp_37GSRAST2NE3MDFSPJ21&asin=B0BN7P8X6C&revisionId=87532a02&format=1&depth=1'"
+              >
+                Demonstração
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projetos B.I</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/f/s!AirrEdm0kuiGg5AbpO0FqJgYQ_ryDg?e=1q4bfz'"
+              >
+                B.I
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/f/s!AirrEdm0kuiGg5AbpO0FqJgYQ_ryDg?e=1q4bfz'"
+              >
+                Demonstração
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Performace</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/JonathaAOliveira/ProjetoPerformace'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/JonathaAOliveira/ProjetoPerformace'"
+              >
+                Github code
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Fale comigo</p>
+      <h1 class="title">Contato</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:jonatha.araujo.oliveira@gmail.com">jonatha.araujo.oliveira@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jonatha-araujo-oliveira-145984317/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://wa.me/5599984946828">(99) 9 8494-6828</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Skill</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jonatha Araujo Oliveira. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
